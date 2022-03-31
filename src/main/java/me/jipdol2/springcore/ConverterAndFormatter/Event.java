@@ -1,4 +1,4 @@
-package me.jipdol2.springcore;
+package me.jipdol2.springcore.ConverterAndFormatter;
 
 public class Event {
 

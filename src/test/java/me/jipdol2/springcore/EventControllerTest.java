@@ -13,16 +13,15 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @ExtendWith(SpringExtension.class)
 @WebMvcTest
-class EventConrollerTest {
+class EventControllerTest {
 
     @Autowired
     MockMvc mockMvc;
 
     @Test
-    void getTest() throws Exception{
+    void getTest() throws Exception {
         mockMvc.perform(get("/event/1"))
                 .andExpect(status().isOk())
                 .andExpect(content().string("1"));
     }
-
 }
