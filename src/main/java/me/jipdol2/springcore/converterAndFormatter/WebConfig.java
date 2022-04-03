@@ -1,4 +1,4 @@
-package me.jipdol2.springcore.ConverterAndFormatter;
+package me.jipdol2.springcore.converterAndFormatter;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.format.FormatterRegistry;

@@ -1,4 +1,4 @@
-package me.jipdol2.springcore.PropertyEditor;
+package me.jipdol2.springcore.propertyEditor;
 
 public class Event {
 

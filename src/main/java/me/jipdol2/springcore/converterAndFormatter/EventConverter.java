@@ -1,4 +1,4 @@
-package me.jipdol2.springcore.ConverterAndFormatter;
+package me.jipdol2.springcore.converterAndFormatter;
 
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;

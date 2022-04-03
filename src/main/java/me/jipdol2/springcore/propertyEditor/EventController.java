@@ -1,5 +1,6 @@
-package me.jipdol2.springcore.PropertyEditor;
+package me.jipdol2.springcore.propertyEditor;
 
+import me.jipdol2.springcore.converterAndFormatter.Event;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.InitBinder;
@@ -11,7 +12,7 @@ public class EventController {
 
     @InitBinder
     public void init(WebDataBinder webDataBinder){
-        webDataBinder.registerCustomEditor(Event.class,new EventEditor());
+        webDataBinder.registerCustomEditor(me.jipdol2.springcore.converterAndFormatter.Event.class,new EventEditor());
     }
 
     @GetMapping("/event/{event}")
