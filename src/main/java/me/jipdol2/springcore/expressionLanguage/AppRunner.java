@@ -5,7 +5,7 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
-@Component
+
 public class AppRunner implements ApplicationRunner {
     @Value("#{1+1}")
     int value;
