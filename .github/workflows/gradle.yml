@@ -46,3 +46,16 @@ jobs:
         port: ${{ secrets.EC2_PORT }}
         source: "build/libs/*.jar"
         target: "/home/ec2-user"
+
+    - name: Stop existing application and start new one
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.EC2_HOST }}
+        username: ${{ secrets.EC2_USERNAME }}
+        key: ${{ secrets.EC2_SSH_PRIVATE_KEY }}
+        port: ${{ secrets.EC2_PORT }}
+        script: |
+          # Stop existing application (Adjust the command according to your application's stop mechanism)
+          pkill -f 'java -jar'
+          # Start new application (Update the jar name accordingly)
+          nohup java -jar /home/ec2-user/*.jar &
